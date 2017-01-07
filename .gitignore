@@ -1,0 +1,6 @@
+moltengamepadctl
+*.o
+.d
+*.so
+*.po
+*.a
