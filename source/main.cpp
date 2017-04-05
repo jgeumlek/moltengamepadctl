@@ -156,6 +156,7 @@ int main(int argc, char* argv[]) {
   delete reader;
 
   int request_id = 1;
+  std::cout << "Listening for plug events and slot events..." << std::endl;
   osc_msg(sock, "/listen", request_id++, "sb", "plug", true);
   osc_msg(sock, "/listen", request_id++, "sb", "slot", true);
   for (auto command : options.eval_commands) {
